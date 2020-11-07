@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Shop-Ship-Deliver</title>
+    </head>
+    <body>
+        
+        <header id="header" class="header">
+            <div>
+                <h2>Shop-Ship-Deliver</h2>
+            </div>
+            <div class="cart">
+                <ul>
+                    <li class="submenu">
+                        <div class="image">
+                        <img src="img/cart.png" id="img-cart">
+                        <span id="cart_count">0</span>
+                        </div>
+                        <div id="shopping-cart">
+                                <table id="cart-content">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody> <!-- Items will be added here-->
+                                </table>
+                                <a href="#" id="clear-cart" style="display: none;">Clear Cart</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="hero">
+            <div class="hero-content">
+                <h2>Let's Shop Ship  Deliver Today</h2>
+            </div>
+        </div>
+    
+        <div id="courses-list" class="container">
+            <h1 id="heading" class="heading">On Sale Now</h1>
+            
+            <div class="course-container">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/course1.jpg" class="course-image">
+                        <div class="info-card">
+                            <h4>Cricket Bat</h4>
+                            <p class="old-price">$90  <span class="new-price">$15</span></p>
+                            <a href="#" class="add-to-cart" data-id="1">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                        <div class="card">
+                            <img src="img/course2.jpg" class="course-image">
+                            <div class="info-card">
+                                <h4>Cricket Pads</h4>
+                                <p class="old-price">$90  <span class="new-price">$15</span></p>
+                                <a href="#" class="add-to-cart" data-id="2">Add to Cart</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="column">
+                        <div class="card">
+                            <img src="img/course3.jpg" class="course-image">
+                            <div class="info-card">
+                                <h4>Stumps</h4>
+                                <p class="old-price">$90  <span class="new-price">$15</span></p>
+                                <a href="#" class="add-to-cart" data-id="3">Add to Cart</a>
+                            </div>
+                        </div> 
+                </div>
+            </div> 
+        </div>
+    
+        <footer>
+            <p>Coded by:<a href="#"> Nagendra Prasad</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

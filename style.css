@@ -1,0 +1,211 @@
+/****************
+    HEADER 
+****************/
+.header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+}
+.header h2 {
+    color: orange;
+}
+.header ul {
+    list-style: none;
+}
+#cart-content {
+    width: 100%;
+}
+tbody{
+    overflow: scroll;
+}
+#clear-cart {
+    border: 1px solid rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: black;
+    padding: 0.8em 2em;
+    position: absolute;
+    bottom: 1em;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+    margin-top: 5px;
+}
+#clear-cart:hover {
+    border-color: rgba(0,0,0,0.8);
+}
+.submenu {
+    position: relative;
+}
+.submenu #shopping-cart{
+    display: none; 
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right:0;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+#cart-content td{
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+img#img-cart {
+    width: 100px
+}
+
+/************************
+    HERO IMAGE SECTION
+************************/
+#hero {
+    background: url(./img/hero.jpg);
+    height: 45vh;
+    background-size: cover;
+    object-fit: cover;
+}
+.hero-content {
+    color: teal;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.hero-content h2 {
+    padding: 1em;
+}
+/*********************
+    COURSES SECTION
+**********************/
+.heading {
+    font-size: 3rem;
+    text-align: center;
+}
+.container {
+    background-color: whitesmoke;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    animation: slide-up 0.4s ease-in forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .course-container {
+        flex-direction: column;
+        padding: 1em;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .course-image {
+        width: 100%;
+    }
+    .course-container .column {
+        margin-bottom: 1.5em;
+    }
+}
+
+.course-container  .column {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+.info-card {
+    display: flex;
+    flex-direction: column;
+}
+.info-card>*:not(:last-child) {
+    padding-left: 2em;
+    margin: 0.8em 0;
+}
+.info-card h4 {
+    font-size: 1.1rem;
+}
+.old-price {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+.new-price {
+    font-weight: 800;
+    font-size: 1.75rem;
+    float: right;
+    margin-right: 1em;
+}
+.info-card a {
+    text-decoration: none;
+    background: #1EAEDB;
+    color: white;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 5px;
+
+}
+.info-card a:hover {
+    background: #0FA0CE;
+}
+/* Javascript Triggered Classes */
+.remove {
+    background: #c23616;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+img.course-image {
+    height: 350px;
+}
+/*
+    FOOTER
+---------------*/
+footer {
+    text-align: center;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+footer p {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0057b9;
+}
+.image { 
+    position: relative; 
+ }
+#cart_count { 
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    width: 30%;
+    color: red;
+    border: 2px solid #666;
+    border-radius: 50%;
+    text-align: center;
+ }
